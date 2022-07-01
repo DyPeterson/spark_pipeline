@@ -6,7 +6,7 @@
 
 ###  Description
 
-A [Data Stack Academy](https://www.datastack.academy/) code review project that takes a `coffee.csv`. With that CSV it profiles the data, cleans the data, queries the data and finally saving it as a parquet file. All using Apache Spark
+A [Data Stack Academy](https://www.datastack.academy/) code review project that takes a [`coffee.csv`](https://www.kaggle.com/datasets/psycon/daily-coffee-price). With that CSV it creates a start to finish pipeline. All using Apache Spark
 
 ###  Technologies Used:
 
@@ -33,7 +33,7 @@ A [Data Stack Academy](https://www.datastack.academy/) code review project that 
 
 	2. Open the terminal and navigate to where you would like the new project to be using `cd` commands. Its also recommended that you make a new directory using `mkdir *directory-name*`.
 
-	3. Clone the repository using the command `git clone https://github.com/DyPeterson/spark_cr.git`
+	3. Clone the repository using the command `git clone https://github.com/DyPeterson/spark_pipeline.git`
 
 	4. After cloning the directory it will appear in the directory that your terminal is set to. So make sure you are in the directory that you want this project copied to.
 
@@ -55,6 +55,7 @@ A [Data Stack Academy](https://www.datastack.academy/) code review project that 
 
 	12. Once the project has been extracted, locate the folder in a terminal and open it with `code .` .
 
+
 ###  Useful Links
 
 ####  Link to project on GitHub:
@@ -62,10 +63,33 @@ A [Data Stack Academy](https://www.datastack.academy/) code review project that 
 [GitHub Repository](https://github.com/DyPeterson/spark_pipeline)
 
 ###  Details
-This project uses Apache Spark to load a CSV into a DataFrame and profile, clean, and query the data.
+This project uses Apache Spark to load a CSV into a DataFrame and profile, clean, and query the data. The process of the pipeline is as follows:
+1. Loads CSV into a spark dataframe setting the schema aswell
 
+2. Add multiple columns:
 
-Finally it saves the new data as a parquet file.
+    1. `daily_price_change` - Difference between `Open` and `Close` 
+    prices
+
+    2. `daily_fluctuation` - Difference between `High` and `Low`
+
+    3. `vol_over_100` - Boolean(true/false) column indicating if the daily volume is over 100
+
+    4. `daily_price_swing` - Absolute value of `daily_price_change`
+
+    5. `net_sales`- Calculates the average of `high`, `low`, `open`, & `close` and multiplies it by the `volume` giving us the net sales
+
+3. Calculates stats:
+
+   1. Average of `daily_price_swing`
+
+   2. Count of days that did not pass 100 Volume
+
+   3. Average of `Open` values
+
+   4. Highest value of `High`
+
+4. Saves the new data as a parquet file.
 
 Contact me with any questions or suggestions [Here](dylan.peterson17@gmail.com)
 
