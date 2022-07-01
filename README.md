@@ -29,6 +29,7 @@ A [Data Stack Academy](https://www.datastack.academy/) code review project that 
 
 ###  Setup & Installation:
 
+
 1. Through the terminal like [GitBash](https://git-scm.com/downloads)
 
 	2. Open the terminal and navigate to where you would like the new project to be using `cd` commands. Its also recommended that you make a new directory using `mkdir *directory-name*`.
@@ -40,20 +41,24 @@ A [Data Stack Academy](https://www.datastack.academy/) code review project that 
 	5. Once this project is cloned you can navigate to that folder within your terminal and create a virtual environment `python3.7 -m venv *any-name*`. Now activate the venv with `source *any-name*/bin/activate`
 
 	6. Install requirements in venv `pip install -r requirements.txt`
+	
+    7. Download the [kaggle dataset](https://www.kaggle.com/datasets/psycon/daily-coffee-price) and place inside the repository's `data` folder 
 
-	7. `code .` to open in default coding software.
+	8. `code .` to open in default coding software.
 
 2. Through GitHub.com
 
-	8. Go to the project's directory page **[HERE](https://github.com/DyPeterson/spark_pipeline)**
+	9. Go to the project's directory page **[HERE](https://github.com/DyPeterson/spark_pipeline)**
 
-	9. Click the green `code` button to open the drop-down menu.
+	10. Click the green `code` button to open the drop-down menu.
 
-	10. At the bottom of the menu will have *Download Zip*. Go ahead and click it to download the project.
+	11. At the bottom of the menu will have *Download Zip*. Go ahead and click it to download the project.
 
-	11. Once downloaded find the `.zip` file and right-click it to bring up the menu. Within that menu click `Extract Here` to extract it in the current folder or click `Extract Files...`to select which folder you would like the project in.
+	12. Once downloaded find the `.zip` file and right-click it to bring up the menu. Within that menu click `Extract Here` to extract it in the current folder or click `Extract Files...`to select which folder you would like the project in.
+	
+    13. Download the [kaggle dataset](https://www.kaggle.com/datasets/psycon/daily-coffee-price) and place inside the repository's `data` folder 
 
-	12. Once the project has been extracted, locate the folder in a terminal and open it with `code .` .
+	14. Once the project has been extracted, locate the folder in a terminal and open it with `code .` .
 
 3. Once opened in your IDE of choice, run the jupyter cells in order.
 
