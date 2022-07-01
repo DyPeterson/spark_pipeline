@@ -6,7 +6,7 @@
 
 ###  Description
 
-A [Data Stack Academy](https://www.datastack.academy/) code review project that takes a `spotify_artists.csv`. With that CSV it profiles the data, cleans the data, queries the data and finally saving it as a parquet file. All using Apache Spark
+A [Data Stack Academy](https://www.datastack.academy/) code review project that takes a `coffee.csv`. With that CSV it profiles the data, cleans the data, queries the data and finally saving it as a parquet file. All using Apache Spark
 
 ###  Technologies Used:
 
