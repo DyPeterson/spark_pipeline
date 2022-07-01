@@ -55,6 +55,7 @@ A [Data Stack Academy](https://www.datastack.academy/) code review project that 
 
 	12. Once the project has been extracted, locate the folder in a terminal and open it with `code .` .
 
+3. Once opened in your IDE of choice, run the jupyter cells in order.
 
 ###  Useful Links
 
@@ -64,7 +65,7 @@ A [Data Stack Academy](https://www.datastack.academy/) code review project that 
 
 ###  Details
 This project uses Apache Spark to load a CSV into a DataFrame and profile, clean, and query the data. The process of the pipeline is as follows:
-1. Loads CSV into a spark dataframe setting the schema aswell
+1. Loads CSV into a spark dataframe setting the schema as well
 
 2. Add multiple columns:
 
